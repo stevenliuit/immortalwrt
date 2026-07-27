@@ -3092,10 +3092,10 @@ define Device/qihoo_360t7-ubi
 endef
 TARGET_DEVICES += qihoo_360t7-ubi
 
-define Device/fzs_5gcpe-p7
+define Device/fzs_5gcpe-p5
   DEVICE_VENDOR := FZS
-  DEVICE_MODEL := 5GCPE P7
-  DEVICE_DTS := mt7981b-fzs-5gcpe-p7
+  DEVICE_MODEL := 5GCPE P5
+  DEVICE_DTS := mt7981b-fzs-5gcpe-p5
   DEVICE_DTS_DIR := ../dts
   UBINIZE_OPTS := -E 5
   BLOCKSIZE := 128k
