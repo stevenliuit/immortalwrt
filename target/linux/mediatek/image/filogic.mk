@@ -3092,6 +3092,20 @@ define Device/qihoo_360t7-ubi
 endef
 TARGET_DEVICES += qihoo_360t7-ubi
 
+define Device/fzs_5gcpe-p7
+  DEVICE_VENDOR := FZS
+  DEVICE_MODEL := 5GCPE P7
+  DEVICE_DTS := mt7981b-fzs-5gcpe-p7
+  DEVICE_DTS_DIR := ../dts
+  UBINIZE_OPTS := -E 5
+  BLOCKSIZE := 128k
+  PAGESIZE := 2048
+  KERNEL_IN_UBI := 1
+  DEVICE_PACKAGES := kmod-mt7981-firmware mt7981-wo-firmware kmod-usb3
+  IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
+endef
+TARGET_DEVICES += fzs_5gcpe-p5
+
 define Device/routerich_ax3000
   DEVICE_VENDOR := Routerich
   DEVICE_MODEL := AX3000
